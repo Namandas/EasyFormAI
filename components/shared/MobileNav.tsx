@@ -69,7 +69,7 @@ const MobileNav = () => {
 
   const pathname = usePathname();
 
-  return (
+  return !pathname.includes('aiform') && (
     <header className="header">
       <nav className="flex gap-2 justify-end ">
         <SignedIn>
